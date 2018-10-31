@@ -1,12 +1,17 @@
 package my.test;
 public class Calculator{
 	
-	public static void main(String[] args){
-		System.out.println("Test for git");
-		int first =	 Integer.valueOf(args[0]);
-		int second = Integer.valueOf(args[1]);
-		int sum = first + second;
-		System.out.println("Sum = "+ sum);
+	private int result;
+	
+	public int add(int ... parameters){
+		for(Integer param : parameters){
+			this.result+= param;
+		}
+		return result;
+	}
+	
+	public int getResult(){
+		return this.result;
 	}
 	
 }
