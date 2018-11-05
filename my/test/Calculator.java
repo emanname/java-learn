@@ -3,7 +3,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /*
 * The Calculator class provides logic for arithmetic operations
-* idk will it work with itn AND double or only Double
+* idk will it work with int AND double or only double
 */
 
 public class Calculator{
