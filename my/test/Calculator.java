@@ -1,7 +1,9 @@
 package my.test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+/*
+* The Calculator class provides logic for arithmetic operations
+*/
 
 public class Calculator{
 	// Todo fix divide by 0
