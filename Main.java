@@ -1,3 +1,5 @@
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 import my.test.*;
 
@@ -13,6 +15,10 @@ public class Main{
 		Calculator calculator = new Calculator();
 		String operation = "+";
 		String exitCond = "no";
+		Date currentTime = Calendar.getInstance().getTime();
+		
+		System.out.println(currentTime);
+
 		
 			while(!exitCond.equals("exit") ){
 				System.out.println("Enter first argument: ");
