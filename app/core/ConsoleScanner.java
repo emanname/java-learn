@@ -1,12 +1,13 @@
 package app.core;
 
-import app.core.Calculator;
+import app.core.*;
+
 import java.util.Scanner;
 
 public class ConsoleScanner {
 	
 	Scanner scanner;
-	Calculator calculator;
+	SimpleCalculator calculator;
 	
 	public ConsoleScanner() {
 		
@@ -18,9 +19,9 @@ public class ConsoleScanner {
 		String exitCond = "no";
 		
 		scanner = new Scanner(System.in);
-		calculator = new Calculator();
+		calculator = new SimpleCalculator();
 		
-		while(!exitCond.equals("exit") ){
+		while(!exitCond.equals("y") ){
 			System.out.println("Enter first argument: ");
 			String first =scanner.next();
 			System.out.println("Chose operation + - * / :");
@@ -31,17 +32,20 @@ public class ConsoleScanner {
 				switch(operation){
 					case "+":{
 						System.out.println("Sum: " + calculator.add(Integer.valueOf(first), Integer.valueOf(second)) );
+						break;
 					}case "-":{
 						System.out.println("Sub: "	+ calculator.sub(Integer.valueOf(first),Integer.valueOf(second)));
+						break;
 					}case"*":{
 						System.out.println("Mult: "+ calculator.mult(Integer.valueOf(first),Integer.valueOf(second)));
+						break;
 					}case"/":{
 						System.out.println("Div: "	+ calculator.div(Integer.valueOf(first),Integer.valueOf(second)));
 						break;
 					}default:break;
 			}
 			
-			System.out.println("Exit?");
+			System.out.println("Exit? y / n ?");
 			exitCond=scanner.next();
 		}
 		

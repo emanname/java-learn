@@ -13,21 +13,24 @@ public class Calculator{
 	
 	private int result=0;
 	
-	public int add(int ... parameters){
+	public int add(final int ... parameters){
 		for(Integer param : parameters){
 			this.result += param;
 		}
 		return result;
 	}
 	
-	public int sub(int... parameters){
+	public int sub( final int... parameters){
+			int localResult=parameters[0];
 			for (Integer param : parameters){
-			this.result -= param;
+			parameters[0]-= param;
 		}			
+		this.result= parameters[0];
+		
 		return result;
 	}
 	
-	public int mult(int ... parameters){
+	public int mult(final int ... parameters){
 		int localResult =1;					
 		for(Integer param : parameters){
 			// если результат пустой 
@@ -37,7 +40,7 @@ public class Calculator{
 		return result;
 	}
 	
-	public int div(int ... parameters){
+	public int div(final int ... parameters){
 		
 		int localResult = parameters[0];
 		
