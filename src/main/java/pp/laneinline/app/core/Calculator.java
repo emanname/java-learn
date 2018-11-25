@@ -1,6 +1,6 @@
-package app.core;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+package core;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 /*
 * The Calculator class provides logic for arithmetic operations
 * idk will it work with int AND double or only double
@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 public class Calculator{
 	// Todo fix divide by 0
-	final Logger logger = LoggerFactory.getLogger(Calculator.class);
+	//final Logger logger = LoggerFactory.getLogger(Calculator.class);
 	
 	
 	private int result=0;

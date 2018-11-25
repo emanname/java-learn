@@ -2,7 +2,7 @@ package main;
 
 
 
-import app.core.ConsoleScanner;;
+import core.ConsoleScanner;
 
 //TODO 	1. move scanner out of main to new class
 //		2. allow user to chose arithmetic operations  

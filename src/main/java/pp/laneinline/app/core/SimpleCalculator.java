@@ -1,4 +1,4 @@
-package app.core;
+package core;
 /*
  * That is just stub class so i can move further
  * it works only with two arguments  and only with ints

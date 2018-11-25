@@ -1,6 +1,6 @@
-package app.core;
+package core;
 
-import app.core.*;
+import core.SimpleCalculator;
 
 import java.util.Scanner;
 
